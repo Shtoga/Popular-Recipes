@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Популярные рецепты</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="#home" class="logo-link">
+                        <h1>Популярные рецепты</h1>
+                    </a>
+                </div>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="#home" class="nav-link active">Главная</a></li>
+                        <li><a href="#recipes" class="nav-link">Рецепты</a></li>
+                        <li><a href="#categories" class="nav-link">Категории</a></li>
+                        <li><a href="#about" class="nav-link">О нас</a></li>
+                        <li><a href="#contact" class="nav-link">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="header-actions">
+                    <button class="search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <button class="menu-toggle" id="menuToggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Поисковая строка -->
+    <div class="search-container" id="searchContainer">
+        <div class="container">
+            <div class="search-box">
+                <input type="text" placeholder="Поиск рецептов..." class="search-input" id="searchInput">
+                <button class="search-submit">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Главный баннер -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2 class="hero-title">Откройте мир вкусных рецептов</h2>
+                <p class="hero-text">Найдите идеальное блюдо для любого случая</p>
+                <button class="btn btn-primary" id="exploreRecipesBtn">Исследовать рецепты</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Популярные рецепты -->
+    <section id="recipes" class="popular-recipes">
+        <div class="container">
+            <h2 class="section-title">Популярные рецепты</h2>
+            <div class="recipes-grid" id="recipesGrid">
+                <!-- Карточки рецептов будут добавлены через JavaScript -->
+            </div>
+            <!-- В секции популярных рецептов после recipes-grid добавить: -->
+            <section id="recipes" class="popular-recipes">
+                <div class="container">
+                    <h2 class="section-title">Популярные рецепты</h2>
+                    <div class="recipes-grid" id="recipesGrid">
+                        <!-- Карточки рецептов будут добавлены через JavaScript -->
+                    </div>
+                    <div class="load-more-container">
+                        <button class="btn btn-primary" id="loadMoreBtn">Смотреть больше рецептов</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <!-- Категории -->
+    <section id="categories" class="categories">
+        <div class="container">
+            <h2 class="section-title">Категории</h2>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>Основные блюда</h3>
+                    <p>Более 250 рецептов</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-ice-cream"></i>
+                    </div>
+                    <h3>Десерты</h3>
+                    <p>Более 150 рецептов</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-glass-cheers"></i>
+                    </div>
+                    <h3>Напитки</h3>
+                    <p>Более 100 рецептов</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Вегетарианские</h3>
+                    <p>Более 120 рецептов</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- О нас -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">О нас</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Мы - команда энтузиастов кулинарии, которая собрала лучшие рецепты со всего мира. Наша миссия -
+                        сделать приготовление пищи доступным и удовольствием для каждого.</p>
+                    <p>Основано в 2020 году, мы уже помогли тысячам людей открыть для себя радость готовки.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Контакты</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Свяжитесь с нами</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@popular-recipes.ru</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+7 (999) 123-45-67</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Москва, ул. Кулинарная, 15</span>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="Ваше имя" required>
+                    <input type="email" placeholder="Ваш email" required>
+                    <textarea placeholder="Ваше сообщение" rows="5" required></textarea>
+                    <button type="submit" class="btn btn-primary">Отправить сообщение</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Популярные рецепты</h3>
+                    <p>Лучшие рецепты со всего мира в одном месте. Готовьте с удовольствием!</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Быстрые ссылки</h4>
+                    <ul>
+                        <li><a href="#home">Главная</a></li>
+                        <li><a href="#recipes">Рецепты</a></li>
+                        <li><a href="#categories">Категории</a></li>
+                        <li><a href="#about">О нас</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Контакты</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> info@popular-recipes.ru</li>
+                        <li><i class="fas fa-phone"></i> +7 (999) 123-45-67</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Москва, ул. Кулинарная, 15</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Подпишитесь на нас</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Популярные рецепты. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Модальное окно рецепта -->
+    <div class="modal" id="recipeModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body" id="modalBody">
+                <!-- Контент модального окна будет заполнен через JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .no-results {
+            text-align: center;
+            padding: 60px 20px;
+            grid-column: 1 / -1;
+        }
+
+        .no-results i {
+            font-size: 4rem;
+            color: var(--gray-color);
+            margin-bottom: 20px;
+        }
+
+        .no-results h3 {
+            color: var(--dark-color);
+            margin-bottom: 10px;
+        }
+
+        .no-results p {
+            color: var(--gray-color);
+        }
+    </style>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
